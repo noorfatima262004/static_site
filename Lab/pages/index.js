@@ -12,7 +12,7 @@ export default function Home({ data }) {
         <meta property="og:description" content={data.content.substring(0, 160)} /> {/* Add a snippet of the content */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://noorfatima262004.github.io/static_site/" />
-        <meta property="og:image" content="\1.jpg" /> 
+        <meta property="og:image" content="/static_site/1.jpg" /> 
         <meta name="robots" content="index, follow" />
       </Head>
 
@@ -21,7 +21,7 @@ export default function Home({ data }) {
         <h1>{data.data.title}</h1>
         <p>{data.data.date}</p>
         <div dangerouslySetInnerHTML={{ __html: data.content }} />
-        <img src="\1.jpg" alt="Example Image" loading="lazy" />
+        <img src="/static_site/1.jpg" alt="Example Image" loading="lazy" />
       </div>
     </>
   );
